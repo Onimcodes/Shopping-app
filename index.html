@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="./Assets/truckImg.png" />
+    <link rel="icon" href="./Assets/LogoMakr-8OJmBt.png" />
+    <link rel="stylesheet" href="./Manifest.json">
     <link rel="stylesheet" href="./style.css" />
     <script src="./dexie.min.js"></script>
-        <!-- Service worker registration script -->
-        <script>
-            if ('serviceWorker' in navigator) {
-              // Register a service worker after the load event
-              window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js');
-              });
-            }
-          </script>
-      
+    <!-- Service worker registration script -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        // Register a service worker after the load event
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js");
+        });
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -41,9 +41,7 @@
       </form>
     </div>
 
-    <div id="itemsDiv">
-     
-    </div>
+    <div id="itemsDiv"></div>
 
     <div id="totalPriceDiv"></div>
     <script src="./script.js"></script>
